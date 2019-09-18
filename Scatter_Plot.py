@@ -8,10 +8,10 @@ Created on Tue Sep 17 13:53:00 2019
 import pandas as pd
 from matplotlib import pyplot as plt
 
-df=pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv")
-#print(df.head())
-plt.xlabel('Length')
-plt.ylabel('Width')
-plt.title("Sepal length & Width representation in Scatter Plot",fontsize=10)
-plt.scatter(df.sepal_length,df.sepal_width,color='red',marker='s',alpha=0.1)
+df=pd.read_csv("https://raw.githubusercontent.com/pardeeprj90/CSV_File_For_Data_Analysis/master/mtcars.csv")
+print(df.head())
+plt.xlabel('Miles per gallon')
+plt.ylabel('Weight of car')
+#plt.title("Sepal length & Width representation in Scatter Plot",fontsize=10)
+plt.scatter(df.mpg,df.wt,color='red',marker='s')
 plt.show()
